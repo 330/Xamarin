@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyStuff.ItemInfoPage"
+    Title="{Binding ItemName}">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label x:Name="NotesLabel" Text="{Binding ItemNotes}" />
+        <Label x:Name="BoxLabel" Text="{Binding BoxName}" />
+        <Label x:Name="aaaLabel" Text="{Binding ItemName}" />
+        <Picker x:Name="picker" Title="Move Item" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding MovedBoxName}">
+        </Picker>
+        <Button Text="Save" Command="{Binding SaveCommand}" />
+        <Button Text="Delete" Command="{Binding DeleteCommand}" />
+    </StackLayout>
+</ContentPage>

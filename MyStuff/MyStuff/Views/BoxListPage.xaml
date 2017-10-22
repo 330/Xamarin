@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyStuff.BoxListPage"
+    Title="Box List">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Command="{Binding ItemAddedCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource" Android="plus.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+        <ListView x:Name="listView" ItemSelected="OnListItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                    </ViewCell.ContextActions>
+                    <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="{Binding Name}" TextColor="#f35e20" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding Notes}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="#503026" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

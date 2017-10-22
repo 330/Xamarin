@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyStuff.BoxEditPage"
+    Title="Edit">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Name" />
+        <Entry x:Name="NameEntry" Text="{Binding Name}" />
+        <Label Text="Notes" />
+        <Entry x:Name="NotesEntry" Text="{Binding Notes}" />
+        <Label Text="Destination room" />
+        <Picker x:Name="Destination" SelectedItem="{Binding Room}" Title="{Binding Destination}">
+           <Picker.Items>
+                <x:String>Living Room</x:String>
+                <x:String>Kitchen</x:String>
+                <x:String>Bed Room</x:String>
+                <x:String>Basement</x:String>
+                <x:String>Bathroom</x:String>
+                <x:String>Study Room</x:String>
+                <x:String>Others</x:String>
+           </Picker.Items>
+        </Picker>
+        <Button Text="Save" Command="{Binding OnSaveClicked}" />
+        <Button Text="Delete" Command="{Binding OnDeleteClicked}" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{B1B673F1-9EA6-4A17-94D9-6044F2EE730F}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="MyStuff/ViewModels/BoxViewModel.cs" line="43" offsetX="407" offsetY="630" expression="Submit" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.MyStuff.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9DCD93B4-88E5-4AE9-B0D5-D8302A617317">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.MyStuff.iOS>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MyStuff.Droid PreferredExecutionTarget="Android.Droid_Device" />
+</Properties>
